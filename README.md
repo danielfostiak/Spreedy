@@ -1,5 +1,4 @@
 # Spreedy
-
 This is an app I created a while back when learning the basics of web development using react.js. 
 
 This app is intended for helping those with learning difficulties, those who read slow, or anyone who just wants to read in a faster manner.
