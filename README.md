@@ -16,4 +16,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Try it here: https://spreedy.vercel.app/
+## Try it out
+
+A live demo can be found at https://spreedy.vercel.app/
