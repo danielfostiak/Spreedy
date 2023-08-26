@@ -39,11 +39,12 @@ function App() {
       setPaused(true);
     } else {
       console.log();
+      const finalLetter = text.split(" ")[wordIdx].slice(-1)
       timers.push(
         setTimeout(() => {
           setwordIdx(wordIdx + 1);
           scrollToCenter("center");
-        }, 60000 / wpm + (text.split(" ")[wordIdx].slice(-1) === "." ? 60000 / wpm : 0)) //
+        }, 60000 / wpm + (finalLetter === "." || finalLetter === "?" ? 60000 / wpm : 0)) //
       );
     }
   }
