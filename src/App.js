@@ -69,11 +69,11 @@ function App() {
       </Navbar>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Information</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>This web-app was created to help those with reading difficulties. However, this app helps anyone who wants to read faster. I am a student developer, you can find the code on github @danielfostiak.</Modal.Body>
         <Modal.Footer>
-          For future enquires, email daniel@spreedy.app
+          For any enquires, please email daniel@spreedy.app
         </Modal.Footer>
       </Modal>
       <div style={{ width: "100%", margin: "0 auto", textAlign: "center" }}>
