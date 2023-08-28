@@ -5,6 +5,7 @@ import RangeSlider from "react-bootstrap-range-slider";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import { Analytics } from "@vercel/analytics/react";
 import "./app.css";
 import { FormControl } from "react-bootstrap";
 
@@ -39,7 +40,7 @@ function App() {
       setPaused(true);
     } else {
       console.log();
-      const finalLetter = text.split(" ")[wordIdx].slice(-1)
+      const finalLetter = text.split(" ")[wordIdx].slice(-1);
       timers.push(
         setTimeout(() => {
           setwordIdx(wordIdx + 1);
@@ -71,7 +72,11 @@ function App() {
         <Modal.Header closeButton>
           <Modal.Title>Information</Modal.Title>
         </Modal.Header>
-        <Modal.Body>This web-app was created to help those with reading difficulties. However, this app helps anyone who wants to read faster. I am a student developer, you can find the code on github @danielfostiak.</Modal.Body>
+        <Modal.Body>
+          This web-app was created to help those with reading difficulties.
+          However, this app helps anyone who wants to read faster. I am a
+          student developer, you can find the code on github @danielfostiak.
+        </Modal.Body>
         <Modal.Footer>
           For any enquires, please email fostiakd@gmail.com
         </Modal.Footer>
@@ -219,6 +224,7 @@ function App() {
           style={{ textAlign: "center" }}
         ></FormControl>
       </Form>
+      <Analytics />
     </div>
   );
 }
