@@ -5,7 +5,7 @@ import RangeSlider from "react-bootstrap-range-slider";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import { Analytics } from "@vercel/analytics/react";
+
 import "./app.css";
 import { FormControl } from "react-bootstrap";
 
@@ -224,7 +224,6 @@ function App() {
           style={{ textAlign: "center" }}
         ></FormControl>
       </Form>
-      <Analytics />
     </div>
   );
 }
